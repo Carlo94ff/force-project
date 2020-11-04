@@ -67,13 +67,14 @@
     border-radius: 5px;
   }
   
-  .dropdown-content a {
+  .dropdown-content div {
     /*color: black;*/
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
   }
 
  
@@ -85,7 +86,7 @@
     right: -8px
   }
   
-  .dropdown-content a:hover {
+  .dropdown-content div:hover {
       /*background-color: rgb(223, 204, 204)*/
       background-color:  rgb(82, 81, 81);
       border-radius: 5px;
@@ -326,8 +327,22 @@
 
 /*------------------------------------------------BODY-----------------------------------------------*/
 
+
+
 .main{
     margin-top: 100px;
+}
+
+.main:lang(jp){
+
+}
+
+.main:lang(en){
+    display: none;
+}
+
+.main:lang(it){
+    display: none;
 }
 
 #pagetitle{
@@ -347,6 +362,38 @@
     z-index: -1;
 }
 
+#slanted-background1-about-me{
+    top: 17px;
+    margin-bottom: 17px;
+    z-index: 0;
+}
+
+.downloadable{
+    text-decoration: none;
+    color:  white;
+}
+
+.downloadable-span{
+    background-color: rgb(54, 53, 53);
+    padding: 10px;
+    border-radius: 25px;
+    position: absolute;
+}
+
+.downloadable-span:hover{
+    background-color: rgb(82, 81, 81);
+    padding: 12px;
+    border-radius: 25px;
+}
+
+#downloadable-span1{
+    bottom: 80px;
+}
+
+#downloadable-span2{
+    right: 270px;
+    bottom: 80px;
+}
 
 
 
@@ -365,6 +412,10 @@
     transform: skewY(6deg);
     padding: 60px;
 
+}
+
+#main-grid-about-me{
+    margin-bottom: 15px;
 }
 
 .main-span{
@@ -407,6 +458,7 @@
     top: 25px;
     border-radius: 25px;
 }
+
 
 #main-grid-img2{
     height: 450px;
@@ -527,6 +579,7 @@
     background-color: rgba(0, 0, 0, 1);
 }
 
+
 .footer-link{
     text-decoration: none;
     color: white;
@@ -548,6 +601,10 @@
 }
 
 #aboutme{
+    position: absolute;
+}
+
+#aboutme-deactivated{
     position: absolute;
 }
 
